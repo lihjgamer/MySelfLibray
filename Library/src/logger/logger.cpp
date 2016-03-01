@@ -11,21 +11,7 @@
 		#ifdef USE_COLOR_TEXT
 			CLogger g_logger;
 		#endif
-	
-#ifdef WIN32
 
-#else
-
-#endif
-		// CLogger::CLogger()
-		// {
-		// #ifdef WIN32
-		// 	 hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-		// #endif
-		// 	 m_log_level = Log_Level_Debug;
-		// 	 m_pStringBuf = new char[MAX_STRING_BUF];
-		// }
-	
 		// 构造函数 默认 以 可读/可写/追加 方式打开文件 如果想使用情况方式 可以设置模式为 std::ios::in|std::ios::out|std::ios::trunc 覆盖原有文件
 		CLogger::CLogger(enumLogLevel log_level,const char* filename /*= "log.log"*/,std::ios_base::openmode  opentype /*= std::ios::in|std::ios::out|std::ios::app*/)
 		{

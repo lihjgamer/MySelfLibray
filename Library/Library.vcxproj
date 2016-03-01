@@ -79,12 +79,12 @@
     <ClInclude Include="include\thread\innerthread.h" />
     <ClInclude Include="include\thread\thread.h" />
     <ClInclude Include="include\time\timehelper.h" />
-    <ClInclude Include="src\time\timehelper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\logger\logger.cpp" />
     <ClCompile Include="src\thread\innerthread.cpp" />
     <ClCompile Include="src\thread\thread.cpp" />
+    <ClCompile Include="src\time\timehelper.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

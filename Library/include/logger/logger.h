@@ -1,6 +1,7 @@
 #pragma once
 
 #ifdef WIN32
+#define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
 #endif
 #include <fstream>
@@ -8,10 +9,10 @@
 namespace lihj
 {
 
-
 	// 功能开关 取消定义则不输出
 	#define USE_COLOR_TEXT
 
+	// 输出消息 最大字节数
 	#define MAX_STRING_BUF 1024
 
 	// Linux 
@@ -23,17 +24,8 @@ namespace lihj
 
 	typedef enum
 	{
-		Log_Level_Info,
-		Log_Level_Debug,
-		Log_Level_Error,
-		Log_Level_Fatal,
-		Log_Level_Max,
-	}enumLogLevel;
-
-	typedef enum 
-	{
 		Console_Color_Default = FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE,
-		Console_Color_Red =  FOREGROUND_RED,
+		Console_Color_Red = FOREGROUND_RED,
 		Console_Color_Blue = FOREGROUND_BLUE,
 		Console_Color_Green = FOREGROUND_GREEN,
 
@@ -42,19 +34,30 @@ namespace lihj
 		Console_Color_Magenta = FOREGROUND_RED | FOREGROUND_BLUE,
 	}enumConsoleColor;
 
+	typedef enum
+	{
+		Log_Level_Info,		// 默认颜色分别对应 enumConsoleColor 颜色的顺序
+		Log_Level_Debug,
+		Log_Level_Error,
+		Log_Level_Fatal,
+		Log_Level_Max,		
+	}enumLogLevel;
+
+
+
 	class CLogger
 	{
 	public:
-		void Info(const char* format, ...);
-		void Debug(const char* format, ...);
-		void Error(const char* format, ...);
-		void Fatal(const char* format, ...);
+		virtual void Info(const char* format, ...);
+		virtual void Debug(const char* format, ...);
+		virtual void Error(const char* format, ...);
+		virtual void Fatal(const char* format, ...);
 
 		void SetLogLevelColor(enumLogLevel log_level, enumConsoleColor console_color);
 		enumConsoleColor GetLogLevelColor(enumLogLevel log_level);
 
 		void SetIntensifyColor(bool val);
-		bool GetIntensifyColor();
+	    bool GetIntensifyColor();
 	private:
 	#ifdef WIN32
 		HANDLE hConsole;
@@ -62,7 +65,7 @@ namespace lihj
 		enumLogLevel  m_log_level;
 		std::fstream m_out_put_file;
 		char *       m_pStringBuf;
-		bool		 m_bIntensifyColor;	// 颜色加深
+		bool		 m_bIntensifyColor;	// 控制台文字颜色加深
 
 		enumConsoleColor m_LogLevelColor[Log_Level_Max];
 

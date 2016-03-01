@@ -60,9 +60,6 @@
     <ClInclude Include="include\time\timehelper.h">
       <Filter>include\time</Filter>
     </ClInclude>
-    <ClInclude Include="src\time\timehelper.cpp">
-      <Filter>src\time</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\thread\thread.cpp">
@@ -73,6 +70,9 @@
     </ClCompile>
     <ClCompile Include="src\logger\logger.cpp">
       <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\time\timehelper.cpp">
+      <Filter>src\time</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
