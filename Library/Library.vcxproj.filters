@@ -46,6 +46,18 @@
     <Filter Include="src\time">
       <UniqueIdentifier>{134e5077-bceb-4319-b196-8bcddd3631c2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\sql">
+      <UniqueIdentifier>{be9a026f-6094-4168-97df-6e346c571174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sql">
+      <UniqueIdentifier>{d4dc05e2-5aaf-4eed-931d-c42feb5126e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\mem_pool">
+      <UniqueIdentifier>{a1106bff-78fe-4162-a8a8-6bf91a1c84c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mem_pool">
+      <UniqueIdentifier>{9bddcffd-ec12-4f20-aec4-c883339333ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\thread\thread.h">
@@ -60,6 +72,12 @@
     <ClInclude Include="include\time\timehelper.h">
       <Filter>include\time</Filter>
     </ClInclude>
+    <ClInclude Include="include\sql\sql_helper.h">
+      <Filter>include\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mem_pool\mem_pool.h">
+      <Filter>include\mem_pool</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\thread\thread.cpp">
@@ -73,6 +91,12 @@
     </ClCompile>
     <ClCompile Include="src\time\timehelper.cpp">
       <Filter>src\time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\sql_helper.cpp">
+      <Filter>src\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem_pool\mem_pool.cpp">
+      <Filter>src\mem_pool</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

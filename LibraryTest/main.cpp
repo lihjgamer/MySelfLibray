@@ -4,61 +4,42 @@
 #include "innerthread.h"
 #include "logger.h"
 
-class ThreadTest : public lihj::CThread
-{
-public:
-	
-protected:
-private:
+#include "sql_helper.h"
 
-	virtual bool Run()
-	{
-		int i = 100;
-		while (i > 0)
-		{
-			printf("%d\n", i--);
-		}
-		return true;
-	}
-
-};
-
-class TestThreadInner
-{
-public:
-
-	void testinnerthread(void* pParam = NULL)
-	{
-		int n = 100;
-		while (n)
-		{
-			printf("%d\n", n--);
-		}
-	}
-
-	void Register()
-	{
-		m_innerthread.Register(this, &TestThreadInner::testinnerthread);
-		m_innerthread.Create();
-		WaitForSingleObject(m_innerthread.GetThreadHandle(), INFINITE);
-	}
-	public:
-	lihj::CInnerThread<TestThreadInner> m_innerthread;
-};
+#include "mem_pool.h"
 
 int main(int argc, char** argv)
 {
-	ThreadTest test;
-	//test.Create();
-	//WaitForSingleObject(test.GetThreadHandle(), INFINITE);
 
-	TestThreadInner innert;
-	innert.Register();
-	lihj::LogInfo("thread flag %d\n", test.GetThreadCurFlag());
-	lihj::LogDebug("thread flag %d\n", test.GetThreadCurFlag());
-	lihj::g_logger.SetIntensifyColor(false);
-	lihj::LogError("thread flag %d\n", test.GetThreadCurFlag());
-	lihj::LogFatal("thread flag %d\n", test.GetThreadCurFlag());
+
+// 	lihj::CSql_Helper sqlhelper;
+// 	lihj::Sql_Paramer sqlparamer;
+// 	sqlparamer.host = "127.0.0.1";
+// 	sqlparamer.dbname = "Legend";
+// 	sqlparamer.passwd = "letmego";
+// 	sqlparamer.port = 3306;
+// 	sqlparamer.user = "webgame";
+// 
+// 	sqlhelper.Startup(sqlparamer);
+
+
+	lihj::CMemPool mempools;
+	mempools.init();
+
+	char* psz1 = (char*)mempools.alloc(23);
+	char* psz2 = (char*)mempools.alloc(23);
+	char* psz3 = (char*)mempools.alloc(23);
+	char* psz4 = (char*)mempools.alloc(23);
+	char* psz5 = (char*)mempools.alloc(23);
+	char* psz6 = (char*)mempools.alloc(23);
+	char* psz7 = (char*)mempools.alloc(23);
+	char* psz8 = (char*)mempools.alloc(23);
+	char* psz9 = (char*)mempools.alloc(23); 
+	char* psz10 = (char*)mempools.alloc(23);
+	mempools.free(psz1);
+
+
+
 	system("pause");
 	return 0;
 }

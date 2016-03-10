@@ -47,7 +47,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>./include/thread;./include/json;./include/logger;./include/xml;./src/thread;./src/json;./src/xml;./src/logger;./include/time;./src/time;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./include/thread;./include/json;./include/logger;./include/xml;./src/thread;./src/json;./src/xml;./src/logger;./include/time;./src/time;../Depend/mysql/include;./include/sql;./src/sql;./include/mem_pool;./src/mem_pool;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -76,12 +76,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\logger\logger.h" />
+    <ClInclude Include="include\mem_pool\mem_pool.h" />
+    <ClInclude Include="include\sql\sql_helper.h" />
     <ClInclude Include="include\thread\innerthread.h" />
     <ClInclude Include="include\thread\thread.h" />
     <ClInclude Include="include\time\timehelper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\logger\logger.cpp" />
+    <ClCompile Include="src\mem_pool\mem_pool.cpp" />
+    <ClCompile Include="src\sql\sql_helper.cpp" />
     <ClCompile Include="src\thread\innerthread.cpp" />
     <ClCompile Include="src\thread\thread.cpp" />
     <ClCompile Include="src\time\timehelper.cpp" />
