@@ -71,6 +71,14 @@ namespace lihj
 		return false;
 	}
 
+	void CThread::Sleep(unsigned long dwMillisecondes)
+	{
+#ifdef WIN32
+		::Sleep(dwMillisecondes);
+#else
+#endif
+	}
+
 	ThreadFlag CThread::GetThreadCurFlag()
 	{
 		return m_ThreadFlag;

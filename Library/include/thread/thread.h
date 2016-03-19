@@ -27,6 +27,8 @@ namespace lihj
 		bool Start();
 		bool Stop();
 
+		void Sleep(unsigned long dwMillisecondes);
+
 		HANDLE     GetThreadHandle();
 		ThreadFlag GetThreadCurFlag();
 		bool	   GetBInit();

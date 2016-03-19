@@ -78,6 +78,9 @@
     <ClInclude Include="include\mem_pool\mem_pool.h">
       <Filter>include\mem_pool</Filter>
     </ClInclude>
+    <ClInclude Include="include\thread\mutex.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\thread\thread.cpp">
@@ -97,6 +100,9 @@
     </ClCompile>
     <ClCompile Include="src\mem_pool\mem_pool.cpp">
       <Filter>src\mem_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\mutex.cpp">
+      <Filter>src\thread</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

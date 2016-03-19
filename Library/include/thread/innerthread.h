@@ -1,5 +1,5 @@
 #pragma once
-
+#include "thread.h"
 namespace lihj
 {
 	/*
@@ -28,6 +28,8 @@ namespace lihj
 		{
 			m_class_obj = class_obj;
 			m_pThreadFunc = pThreadFunc;
+
+			// 这里的参数 应交给用户去定义
 			m_pParam = pParam;
 			return m_pThreadFunc != NULL && m_class_obj != NULL;
 		}
@@ -43,8 +45,8 @@ namespace lihj
 		}
 
 	private:
-		T*		   m_class_obj; // 类实例
-		ThreadFunc m_pThreadFunc;// 类方法（线程处理函数）
-		void*      m_pParam;	 // 处理函数携带的参数
+		T*		   m_class_obj;   // 类实例
+		ThreadFunc m_pThreadFunc; // 类方法（线程处理函数）
+		void*      m_pParam;	  // 处理函数携带的参数
 	};
 }

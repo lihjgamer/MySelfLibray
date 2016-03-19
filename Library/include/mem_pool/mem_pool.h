@@ -1,5 +1,6 @@
 #pragma once
 
+#include "mutex.h"
 #include <map>
 namespace lihj
 {
@@ -9,7 +10,7 @@ namespace lihj
 		CMemPool();
 		~CMemPool();
 
-		bool init();
+		bool init(int max_pool_size = 32 * 1024 * 1024);
 		void uninit();
 
 		void* alloc(int byte_size);
@@ -38,6 +39,8 @@ namespace lihj
 			int		  sum_block;	// 总共的块
 			int       use_block;	// 使用的块
 			int       free_block;	// 可用的块
+
+			// int       alloc_nun;	// 内存在分配次数 
 		}mem_pool;
 
 		typedef std::map<mem_node*, int> MapMemAddr;
@@ -45,5 +48,6 @@ namespace lihj
 		
 		mem_pool m_mempools[8];
 		MapMemAddr m_map_mem;
+		CLMutex    m_mutxt;
 	};
 }

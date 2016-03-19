@@ -79,6 +79,7 @@
     <ClInclude Include="include\mem_pool\mem_pool.h" />
     <ClInclude Include="include\sql\sql_helper.h" />
     <ClInclude Include="include\thread\innerthread.h" />
+    <ClInclude Include="include\thread\mutex.h" />
     <ClInclude Include="include\thread\thread.h" />
     <ClInclude Include="include\time\timehelper.h" />
   </ItemGroup>
@@ -87,6 +88,7 @@
     <ClCompile Include="src\mem_pool\mem_pool.cpp" />
     <ClCompile Include="src\sql\sql_helper.cpp" />
     <ClCompile Include="src\thread\innerthread.cpp" />
+    <ClCompile Include="src\thread\mutex.cpp" />
     <ClCompile Include="src\thread\thread.cpp" />
     <ClCompile Include="src\time\timehelper.cpp" />
   </ItemGroup>
