@@ -17,7 +17,7 @@ namespace lihj
 		
 	}
 	
-	bool CThread::Create(ThreadFlag tf)
+	bool CThread::Init(ThreadFlag tf)
 	{
 		assert(m_bInit == false);
 		int nThreadFlag[] = { 0, 4 };
@@ -39,7 +39,7 @@ namespace lihj
 
 	}
 	
-	bool CThread::Destroy()
+	bool CThread::Uninit()
 	{
 		if (TerminateThread(m_hThread, 0))
 		{

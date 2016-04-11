@@ -21,8 +21,8 @@ namespace lihj
 		CThread();
 		virtual ~CThread();
 
-		bool Create(ThreadFlag tf = ThreadFlagRunning);
-		bool Destroy();
+		bool Init(ThreadFlag tf = ThreadFlagRunning);
+		bool Uninit();
 
 		bool Start();
 		bool Stop();

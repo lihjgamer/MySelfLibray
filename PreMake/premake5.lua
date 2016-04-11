@@ -11,11 +11,13 @@ includedirs {
 "../Library/include/sql",
 "../Library/include/thread",
 "../Library/include/time",
+"../Library/include/net",
 "../Library/src/logger",
 "../Library/src/mem_pool",
 "../Library/src/sql",
 "../Library/src/thread",
 "../Library/src/time",
+"../Library/src/net",
 "../Depend/mysql/include"
 }
 defines{"_DEBUG","WIN32","_WINDOWS"}

@@ -57,7 +57,7 @@ namespace lihj
 
 		// 先不启动线程
 		m_sql_thread.Register(this, &CSql_Helper::ProcessFunc, NULL);
-		m_sql_thread.Create();
+		m_sql_thread.Init();
 
 
 		return true;
