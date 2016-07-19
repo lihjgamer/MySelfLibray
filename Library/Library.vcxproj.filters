@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Depend">
+      <UniqueIdentifier>{15A1E0AD-0143-0B84-EAFD-1ED8D63E92D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\mysql">
+      <UniqueIdentifier>{5A9337BC-46F6-C660-EF7B-FF16DBBD92E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\mysql\include">
+      <UniqueIdentifier>{CD746766-B903-F12F-6222-052B4E9001D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\mysql\include\mysql">
+      <UniqueIdentifier>{12512CD5-FE60-D8A5-671A-3DC45349C73E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\mysql\include\mysql\psi">
+      <UniqueIdentifier>{8D3B4E46-7961-18AD-62A7-9D784E6C3D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fileutil">
+      <UniqueIdentifier>{36A8DC78-22A1-FBCA-4BD3-E04F372BDBD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\logger">
+      <UniqueIdentifier>{58E5275B-44B3-1B61-2D47-8C8719B4F7C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\mem_pool">
+      <UniqueIdentifier>{904AA6BC-7C43-C50E-A575-AA9391CDA41A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\net">
+      <UniqueIdentifier>{3FF3C031-ABA8-3927-349D-33FEA051302B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sql">
+      <UniqueIdentifier>{080AC131-74BF-3927-FDB3-33FE6968302B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\thread">
+      <UniqueIdentifier>{F07D586D-DC4B-4C73-C5DF-BC99B14C28D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\time">
+      <UniqueIdentifier>{E7B5E269-D318-720E-7C9E-AAC468E03D91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fileutil">
+      <UniqueIdentifier>{5AFC5D64-465F-ED08-EFE4-25BFDB26B98B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\logger">
+      <UniqueIdentifier>{7CE03D69-6898-7FB6-D19F-5812BD761AA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mem_pool">
+      <UniqueIdentifier>{B49E27A8-A001-B74C-4987-EF0235C982CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\net">
+      <UniqueIdentifier>{E32030A9-4F00-AF44-5818-3A1BC47615A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sql">
+      <UniqueIdentifier>{AC3730A9-1817-AF44-212F-3A1B8D8D15A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thread">
+      <UniqueIdentifier>{14796E7B-0031-B0C8-6938-8924550F4BB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\time">
+      <UniqueIdentifier>{0B9837CF-F764-92DA-207E-80820CAAC768}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Depend\mysql\include\decimal.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\errmsg.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\keycache.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\m_ctype.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\m_string.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_alloc.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_attribute.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_compiler.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_config.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_dbug.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_dir.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_getopt.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_global.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_list.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_net.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_pthread.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_sys.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\my_xml.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\client_plugin.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\innodb_priv.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\plugin.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\plugin_audit.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\plugin_auth.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\plugin_auth_common.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\plugin_ftparser.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\psi\mysql_file.h">
+      <Filter>Depend\mysql\include\mysql\psi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\psi\mysql_thread.h">
+      <Filter>Depend\mysql\include\mysql\psi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\psi\psi.h">
+      <Filter>Depend\mysql\include\mysql\psi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\psi\psi_abi_v1.h">
+      <Filter>Depend\mysql\include\mysql\psi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\psi\psi_abi_v2.h">
+      <Filter>Depend\mysql\include\mysql\psi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\service_my_snprintf.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\service_thd_alloc.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\service_thd_wait.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\service_thread_scheduler.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\services.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql\thread_pool_priv.h">
+      <Filter>Depend\mysql\include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql_com.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql_embed.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql_time.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysql_version.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysqld_ername.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\mysqld_error.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\plugin.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\plugin_audit.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\plugin_ftparser.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\sql_common.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\sql_state.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\sslopt-case.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\sslopt-longopts.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\sslopt-vars.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Depend\mysql\include\typelib.h">
+      <Filter>Depend\mysql\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fileutil\fileutil.h">
+      <Filter>include\fileutil</Filter>
+    </ClInclude>
+    <ClInclude Include="include\logger\logger.h">
+      <Filter>include\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mem_pool\mem_pool.h">
+      <Filter>include\mem_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net\net_def.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net\net_init.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net\server.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net\session_client.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\sql_base_cmd.h">
+      <Filter>include\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\sql_base_result.h">
+      <Filter>include\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\sql_connect.h">
+      <Filter>include\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\sql_helper.h">
+      <Filter>include\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\sql_store_result.h">
+      <Filter>include\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\sql_use_result.h">
+      <Filter>include\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\innerthread.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\mutex.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\thread.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\time\timehelper.h">
+      <Filter>include\time</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fileutil\fileutil.cpp">
+      <Filter>src\fileutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\logger\logger.cpp">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem_pool\mem_pool.cpp">
+      <Filter>src\mem_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\server.cpp">
+      <Filter>src\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\session_client.cpp">
+      <Filter>src\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\sql_base_cmd.cpp">
+      <Filter>src\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\sql_base_result.cpp">
+      <Filter>src\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\sql_connect.cpp">
+      <Filter>src\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\sql_helper.cpp">
+      <Filter>src\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\sql_store_result.cpp">
+      <Filter>src\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\sql_use_result.cpp">
+      <Filter>src\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\innerthread.cpp">
+      <Filter>src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\mutex.cpp">
+      <Filter>src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\thread.cpp">
+      <Filter>src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\time\timehelper.cpp">
+      <Filter>src\time</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

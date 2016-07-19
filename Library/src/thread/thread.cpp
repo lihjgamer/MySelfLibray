@@ -1,4 +1,4 @@
-#include "thread.h"
+#include "thread/thread.h"
 #include <assert.h>
 
 namespace lihj

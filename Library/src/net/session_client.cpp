@@ -1,5 +1,5 @@
-#include "session_client.h"
-#include "net_def.h"
+#include "net/session_client.h"
+#include "net/net_def.h"
 #include <MSWSock.h>
 #pragma warning(disable:4996)
 

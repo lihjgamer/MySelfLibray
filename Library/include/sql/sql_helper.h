@@ -8,10 +8,10 @@
 #include <vector>
 
 #include "mysql.h"
-#include "thread.h"
-#include "innerthread.h"
-#include "mutex.h"
-#include "mem_pool.h"
+#include "thread/thread.h"
+#include "thread/innerthread.h"
+#include "thread/mutex.h"
+#include "mem_pool/mem_pool.h"
 namespace lihj
 {
 	struct Sql_Paramer

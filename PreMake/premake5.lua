@@ -6,6 +6,12 @@ configurations { "Debug", "Release" }
 -- 答案 : 所有的路径都是相对于premake4 的路径
 includedirs {
 "../LibraryTest",
+"../Library/include",
+"../Library/src",
+"../Depend/mysql/include"
+}
+
+--[[
 "../Library/include/logger",
 "../Library/include/mem_pool",
 "../Library/include/sql",
@@ -18,8 +24,7 @@ includedirs {
 "../Library/src/thread",
 "../Library/src/time",
 "../Library/src/net",
-"../Depend/mysql/include"
-}
+]]
 defines{"_DEBUG","WIN32","_WINDOWS"}
         
 language "C++"

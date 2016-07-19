@@ -2,9 +2,9 @@
 
 #include <WinSock2.h>
 #include <string>
-#include "thread.h"
-#include "innerthread.h"
-#include "session_client.h"
+#include "thread/thread.h"
+#include "thread/innerthread.h"
+#include "net/session_client.h"
 
 
 #include <list>
@@ -30,7 +30,7 @@ namespace lihj
 		CClientSession* Get_Available_Session();
 
 
-		void HandleAccept(DWORD last_error);
+		void HandleAccept(DWORD last_error, CClientSession* pSession);
 		void HandleRead();
 		void HandleWrite();
 	private:
@@ -40,6 +40,7 @@ namespace lihj
 		CClientSession* m_session_client;
 		std::list<CClientSession*> m_available_sessions;
 
+		int          m_max_accept;
 		volatile int m_sync_accept;
 	private:
 		// 网络工作线程

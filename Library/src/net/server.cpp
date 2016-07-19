@@ -1,4 +1,4 @@
-#include "server.h"
+#include "net/server.h"
 #include <MSWSock.h>
 #pragma warning(disable:4996)
 
@@ -115,6 +115,7 @@ namespace lihj
 			return;
 		}
 
+
 		DWORD bytes = 0;
 		DWORD last_error = 0;
 		BOOL  result = FALSE;
@@ -129,9 +130,11 @@ namespace lihj
 			(LPOVERLAPPED)&pSession->m_accept);
 		last_error = ::WSAGetLastError();
 
+		// 投递的请求立即得到了相应
 		if (!result && ERROR_IO_PENDING != last_error)
 		{
 			// 这里要处理连接
+			HandleAccept(last_error, pSession);
 		}
 	}
 
@@ -140,9 +143,13 @@ namespace lihj
 		m_available_sessions.push_back(pSession);
 	}
 
-	void CNetServer::HandleAccept(DWORD last_error)
+	void CNetServer::HandleAccept(DWORD last_error, CClientSession* pSession)
 	{
-
+// 		::GetAcceptExSockaddrs(pSession->m_buffer_recieve,
+// 			0, 
+// 			sizeof(sockaddr_in) + 16,
+// 			sizeof(sockaddr_in) + 16,
+// 			);
 	}
 
 	void CNetServer::HandleRead()

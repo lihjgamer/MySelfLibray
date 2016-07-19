@@ -1,4 +1,4 @@
-#include "sql_helper.h"
+#include "sql/sql_helper.h"
 #include <string.h>
 
 namespace lihj
@@ -10,7 +10,6 @@ namespace lihj
 
 		queue_head = NULL;
 		queue_tail = NULL;
-
 	}
 
 	CSql_Helper::~CSql_Helper()
